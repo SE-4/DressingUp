@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 标题栏 -->
+    <LinearLayout
+        android:id="@+id/title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@color/mainBg">
+        <TextView
+            android:id="@+id/left_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/back"
+            android:drawablePadding="5dp"
+            android:textSize="@dimen/text_small"
+            android:text="@string/back_str"/>
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="@dimen/text_common"
+            android:text="@string/server_ip_str"/>
+
+        <TextView
+            android:id="@+id/right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:textSize="@dimen/text_small"
+            android:text="操作"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding_big"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/ip_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_common"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginBottom="@dimen/padding_big"
+            android:text=""/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_common"
+            android:textColor="@android:color/holo_blue_dark"
+            android:layout_marginBottom="@dimen/padding_big"
+            android:text="@string/input_server_ip_str"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_common"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/ip_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_common"
+            android:layout_marginTop="20dp"
+            android:text="@string/save_str"
+            android:textSize="@dimen/text_common"
+            android:textColor="@android:color/white"
+            android:background="@drawable/selector_button"/>
+
+    </LinearLayout>
+
+</LinearLayout>

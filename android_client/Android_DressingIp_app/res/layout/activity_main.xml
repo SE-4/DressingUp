@@ -1,0 +1,263 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 标题栏 -->
+    <LinearLayout
+        android:id="@+id/title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:background="@color/mainBg">
+        <TextView
+            android:id="@+id/left_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_top_bar"
+            android:drawablePadding="5dp"
+            android:textSize="@dimen/text_small"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Recommentation"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_common" />
+
+        <TextView
+            android:id="@+id/right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:textSize="@dimen/text_small"
+            android:text="操作"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="45dp"
+        android:padding="@dimen/padding_big"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_common"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scene："/>
+            <Spinner
+                android:id="@+id/category_sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/category_array">
+            </Spinner>
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="2">
+
+        </GridView>
+    </LinearLayout>
+
+
+    <!--左侧菜单-->
+    <RelativeLayout
+        android:id="@+id/menu_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+        <LinearLayout
+            android:id="@+id/shade_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#86222222"
+            android:visibility="visible"
+            android:orientation="horizontal">
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/menu_lv"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/book_read"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@color/mainBg"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/img_iv"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:src="@drawable/img_common_man"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/username_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="jack"
+                        android:textSize="@dimen/text_common"
+                        android:textColor="@android:color/white"/>
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/back_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:src="@drawable/close"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/back_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_common"
+                android:textColor="@android:color/white"
+                android:drawablePadding="@dimen/padding_small"
+                android:drawableRight="@drawable/ic_top_bar"
+                android:visibility="gone"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/divider"/>
+
+            <TextView
+                android:id="@+id/one_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/mark"
+                android:drawablePadding="@dimen/padding_small"
+                android:drawableRight="@drawable/right_arrow"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_common"
+                android:text="Recommentation"
+                android:textColor="@android:color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/divider">
+
+            </View>
+
+            <TextView
+                android:id="@+id/two_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_common"
+                android:text="Upload"
+                android:textColor="@android:color/white"
+                android:drawablePadding="@dimen/padding_small"
+                android:drawableLeft="@drawable/mark"
+                android:drawableRight="@drawable/right_arrow"
+                />
+
+				    <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/divider">
+
+            </View>
+
+            <TextView
+                android:id="@+id/three_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_common"
+                android:text="My thumb up"
+                android:textColor="@android:color/white"
+                android:drawablePadding="@dimen/padding_small"
+                android:drawableLeft="@drawable/mark"
+                android:drawableRight="@drawable/right_arrow"
+                />
+
+        
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/divider">
+            </View>
+
+            <TextView
+                android:id="@+id/four_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_common"
+                android:text="Personal center"
+                android:textColor="@android:color/white"
+                android:drawablePadding="@dimen/padding_small"
+                android:drawableLeft="@drawable/mark"
+                android:drawableRight="@drawable/right_arrow"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/divider">
+            </View>
+
+            <TextView
+                android:id="@+id/five_tv"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_common"
+                android:text="修改密码"
+                android:textColor="@android:color/white"
+                android:drawablePadding="@dimen/padding_small"
+                android:drawableLeft="@drawable/mark"
+                android:drawableRight="@drawable/right_arrow"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/divider">
+            </View>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

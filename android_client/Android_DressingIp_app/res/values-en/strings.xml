@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DressingUp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="back_str">Back</string>
+    <string name="quick_register_str">Quick register</string>
+    <string name="select_image_str">Gallery</string>
+    <string name="take_photo_str">Take a picture</string>
+    <string name="email_str">Email (for password recovery) :</string>
+    <string name="name_str">Name：</string>
+    <string name="tel_str">Tel：</string>
+    <string name="wechat_str">WeChat：</string>
+    <string name="sex_str">Sex：</string>
+    <string name="birthday_str">Birthday：</string>
+    <string name="pass_rety_str">Repeat the password：</string>
+    <string name="required_str">Required</string>
+    <string name="pass_str">Password：</string>
+    <string name="username_str">UserName：</string>
+    <string name="find_pass_str">get password</string>
+    <string name="register_email_str">Registered mail:</string>
+    <string name="home_page_str">Home</string>
+    <string name="login_str">Login</string>
+    <string name="remember_pass_str">Remember the password</string>
+    <string name="forget_pass_str">Forget your password?</string>
+    <string name="no_account_get_one_str">No account?Sign up</string>
+    <string name="update_pass_str">Change the password</string>
+    <string name="yuan_pass_str">The original password：</string>
+    <string name="make_sure_str">Confirm the change</string>
+    <string name="improve_information_str">Perfect information</string>
+    <string name="submit_str">Submit</string>
+    <string name="please_input_username_or_email_str">Please fill in user name or email</string>
+    <string name="find_pass_error_str">get password error</string>
+    <string name="email_sended_str">The email has been sent. Please check</string>
+    <string name="press_the_exit_procedure_again_str">Press the exit procedure again</string>
+    <string name="username_or_pass_error_str">User name or password error</string>
+    <string name="login_success_str">Login successfully</string>
+    <string name="person_center_str">Personal center</string>
+    <string name="log_out_str">Log out</string>
+    <string name="exit_app_str">Quit the application</string>
+    <string name="select_phote_require_str">Please select a head image</string>
+    <string name="username_passe_is_no_null_str">An account and password cannot be empty</string>
+    <string name="pass_diff_str">Two passwords are different</string>
+    <string name="register_fail_str">Register failed</string>
+    <string name="register_success_to_login_str">Register successfully, please login</string>
+    <string name="please_input_complete_str">Please complete the information</string>
+    <string name="yuan_pass_error_str">The original password is incorrect</string>
+    <string name="update_pass_error_str">Password change failed</string>
+    <string name="update_error_success_str">Password changed successfully</string>
+    <string name="uodate_error_str">Update failed</string>
+    <string name="update_success_str">update successfully</string>
+
+
+    <string name="server_ip_str">Server IP</string>
+    <string name="save_str">Save</string>
+    <string name="ip_error_str">Incorrect IP address</string>
+    <string name="service_ip_error_str">Incorrect server IP</string>
+    <string name="localhost_ip_str">The machine IP：</string>
+    <string name="input_server_ip_str">Please fill in the LAN IP of the running server project computer</string>
+
+    <string-array name="sex_array">
+        <item>male</item>
+        <item>female</item>
+    </string-array>
+</resources>

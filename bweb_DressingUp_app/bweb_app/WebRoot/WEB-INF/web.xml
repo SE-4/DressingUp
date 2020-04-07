@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+	<display-name>school</display-name>
+
+	<welcome-file-list>
+		<welcome-file>IndexServlet</welcome-file>
+	</welcome-file-list>
+
+	<listener>  
+	    <listener-class>  
+	        com.servlet.comm.StartServlet
+	    </listener-class>  
+	</listener> 
+	<servlet>
+		<servlet-name>IndexServlet</servlet-name>
+		<servlet-class>com.servlet.comm.IndexServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>IndexServlet</servlet-name>
+		<url-pattern>/IndexServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ClientServlet</servlet-name>
+		<servlet-class>com.servlet.comm.ClientServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ClientServlet</servlet-name>
+		<url-pattern>/ClientServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>com.servlet.comm.UserServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/UserServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>UploadServlet</display-name>
+		<servlet-name>UploadServlet</servlet-name>
+		<servlet-class>com.servlet.comm.UploadServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UploadServlet</servlet-name>
+		<url-pattern>/UploadServlet</url-pattern>
+	</servlet-mapping>
+ 
+	
+
+
+	<servlet>
+		<description></description>
+		<display-name>TuijianServlet</display-name>
+		<servlet-name>TuijianServlet</servlet-name>
+		<servlet-class>com.servlet.TuijianServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>TuijianServlet</servlet-name>
+		<url-pattern>/TuijianServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>DianzanServlet</display-name>
+		<servlet-name>DianzanServlet</servlet-name>
+		<servlet-class>com.servlet.DianzanServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DianzanServlet</servlet-name>
+		<url-pattern>/DianzanServlet</url-pattern>
+	</servlet-mapping>
+
+</web-app>

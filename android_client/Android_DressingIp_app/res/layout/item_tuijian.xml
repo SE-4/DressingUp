@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_common"
+    android:layout_marginBottom="@dimen/padding_small">
+
+    <LinearLayout
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/img_iv"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@android:color/holo_blue_dark"/>
+
+        <TextView
+            android:id="@+id/dianzan_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="888 times like" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_common"
+                android:textStyle="bold"
+                android:paddingLeft="@dimen/padding_common"
+                android:paddingRight="@dimen/padding_common"
+                android:text="标题信息"/>
+            <TextView
+                android:id="@+id/msg_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_common"
+                android:paddingRight="@dimen/padding_common"
+                android:paddingTop="@dimen/padding_small"
+                android:singleLine="true"
+                android:text="信息1"/>
+
+            <TextView
+                android:id="@+id/msg2_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_common"
+                android:paddingRight="@dimen/padding_common"
+                android:paddingTop="@dimen/padding_small"
+				android:visibility="invisible"
+                android:singleLine="true"
+                android:text="信息2"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

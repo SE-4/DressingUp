@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="mainBg">#3D7878</color>
+    <color name="mainBgPress">#CC3D7878</color>
+
+    <color name="divLine">#D1D1D1</color>
+
+    <color name="gray">#696969</color>
+
+    <color name="orange">#FF6600</color>
+
+</resources>
